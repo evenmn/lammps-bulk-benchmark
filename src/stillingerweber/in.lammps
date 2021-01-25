@@ -1,0 +1,51 @@
+# LAMMPS Stillinger-Weber simulation script to be used for molecular dynamics
+# benchmarks of computer devices and force-fields. The script
+# simulates the NVE ensemble, and it is stripped for benchmark purposes
+
+units metal
+atom_style atomic
+atom_modify map array
+boundary p p p
+atom_modify sort 0 0.0
+
+# define unit cell
+variable scale equal 1.3
+variable a equal 5.431*${scale}
+lattice custom $a &
+a1 1.0 0.0 0.0 &
+a2 0.0 1.0 0.0 &
+a3 0.0 0.0 1.0 &
+basis 0.0 0.0 0.0 &
+basis 0.0 0.5 0.5 &
+basis 0.5 0.0 0.5 &
+basis 0.5 0.5 0.0 &
+basis 0.25 0.25 0.25 &
+basis 0.25 0.75 0.75 &
+basis 0.75 0.25 0.75 &
+basis 0.75 0.75 0.25
+
+# define system
+variable L equal 20
+region reg block 0 $L &
+0 $L &
+0 $L
+create_box 1 reg
+create_atoms 1 region reg
+mass 1 28.06
+group Si type 1
+
+# define force-field
+pair_style sw
+pair_coeff * * Si.sw Si
+neighbor 1.0 bin
+neigh_modify every 1 delay 10 check yes
+
+timestep 1e-3
+
+velocity all create 1000 32646
+fix nve all nve
+
+thermo 100
+thermo_style custom step atoms time spcpu cpuremain
+
+run 10000
