@@ -1,0 +1,19 @@
+mass 1 1.00794
+mass 2 15.9994
+
+set type 1 charge 0.5564
+set type 2 charge -1.1128
+
+pair_style lj/cut/tip4p/long 2 1 1 1 0.1546 12
+#pair_modify tail yes
+kspace_style pppm/tip4p 1.0e-5
+
+pair_coeff 1 1 0.0 0.0
+pair_coeff 1 2 0.0 0.0
+pair_coeff 2 2 0.1852 3.1589
+
+bond_style harmonic
+bond_coeff 1 0.0 0.9572
+
+angle_style harmonic
+angle_coeff 1 0.0 104.52

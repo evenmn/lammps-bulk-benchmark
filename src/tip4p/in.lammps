@@ -1,0 +1,23 @@
+# LAMMPS TIP4P simulation script to be used for molecular dynamics
+# benchmarks of computer devices and force-fields. The script
+# simulates the NVE ensemble, and it is stripped for benchmark purposes
+
+units real
+atom_style full
+
+read_data water_molecule.data
+replicate 20 20 20
+
+include H2O.TIP4P
+neigh_modify every 1 delay 0 check yes
+fix constrain all shake 1.0e-4 100 0 b 1 a 1
+
+timestep 2.0
+
+velocity all create 300 73857
+fix nve all nve
+
+thermo 100
+thermo_style custom step time atoms spcpu cpuremain
+
+run 1000
