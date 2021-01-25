@@ -1,0 +1,30 @@
+# LAMMPS Lennard-Jones simulation script to be used for molecular dynamics
+# benchmarks of computer devices and force-fields. The script
+# simulates the NVE ensemble, and it is stripped for benchmark purposes
+
+variable lenbox equal 30
+variable sigma equal 3.405
+
+units lj
+dimension 3
+boundary p p p
+atom_style atomic
+
+lattice fcc 1.0
+region simbox block 0 $(v_lenbox/v_sigma) 0 $(v_lenbox/v_sigma) 0 $(v_lenbox/v_sigma)
+create_box 1 simbox
+create_atoms 1 box
+mass 1 1.0
+
+pair_style lj/cut 3.0
+pair_coeff 1 1 1.0 1.0 3.0
+
+timestep 0.005
+
+velocity all create 10 87287
+fix nve all nve
+
+thermo 100
+thermo_style custom step atoms time spcpu cpuremain
+
+run 10000
