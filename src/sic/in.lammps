@@ -1,0 +1,21 @@
+units metal
+boundary p p p
+atom_style atomic
+
+read_data ${datafile}
+
+pair_style vashishta
+pair_coeff * * SiC.vashishta C Si
+
+mass 1 12.011
+mass 2 28.079
+
+timestep 0.002
+
+velocity mobile create ${temp} ${seed} rot yes
+
+thermo 100
+thermo_style custom step time atoms spcpu cpuremain
+
+run ${run_steps}
+
