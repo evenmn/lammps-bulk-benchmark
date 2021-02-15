@@ -3,21 +3,23 @@ We run molecular dynamics simulations of bulks using LAMMPS to benchmark the sim
 
 Below, we present the number of timesteps per seconds for the various simulations and for various devices. All simulations were run in the micro-canonical ensemble (NVE), but the number of particles in the simulations vary.
 
-| CPU                   | Cores | Freq.   | LJ       | SW      | TIP4P  | SiC | SiO2 |
-|-----------------------|-------|---------|----------|---------|--------|-----|------|
-| Intel Xeon W-2295     | 18    | 3.00GHz | 3134.155 | 225.875 | 34.796 |     |      |
-| Intel Core i7-4500U   | 4     | 1.80GHz |          |         |        |     |      |
-| Intel Xeon E5-2670    | 16    | 2.60GHz |          |         |        |     |      |
-| Intel Xeon E5-2683    | 16    | 2.10GHz |          |         |        |     |      |
+| CPU                   | Computer  | Cores | Freq.   | LJ       | SW       | TIP4P  | SiC | SiO2 |
+|-----------------------|-----------|-------|---------|----------|----------|--------|-----|------|
+| Intel Core i7-4500U   | Maxwell   | 4     | 1.80GHz | 357.790  |  14.694  |  2.701 |     |      |
+| Intel Xeon E5-2620    | Bigfacet  | 16    | 2.10GHz |          |          |        |     |      |
+| Intel Xeon E5-2683    | Fram      | 16    | 2.10GHz |          |          |        |     |      |
+| Intel Xeon E5-2670    | Egil      | 16    | 2.60GHz |          |          |        |     |      |
+| Intel Xeon W-2295     | Rahman    | 18    | 3.00GHz | 3134.155 | 225.875  | 34.796 |     |      |
+| AMD EPYC 7252         | Hugefacet | 8     | 3.10GHz | 2082.737 | 119.200  | 20.081 |     |      |
 
-| GPU                   | Cores | Freq.   | LJ       | SW      | TIP4P  | SiC | SiO2 |
-|-----------------------|-------|---------|----------|---------|--------|-----|------|
-| Nvidia RTX 2070 Super | 2560  | 1.60GHz |          |         |        |     |      |
-| Nvidia P100 Pascal    | 3584  | 1.20GHz |          |         |        |     |      |
-| Nvidia A100 Ampere    | 8192  | 1.40GHz |          |         |        |     |      |
+| GPU                   | Computer  | Cores | Freq.   | LJ       | SW       | TIP4P  | SiC | SiO2 |
+|-----------------------|-----------|-------|---------|----------|----------|--------|-----|------|
+| Nvidia RTX 2070 Super | Rahman    | 2560  | 1.60GHz |          |          |        |     |      |
+| Nvidia P100 Pascal    | Bigfacet  | 3584  | 1.20GHz | 1604.503 |  925.301 |   -    |     |      |
+| Nvidia A100 Ampere    | Hugefacet | 8192  | 1.40GHz | 2180.423 | 2070.548 |   -    |     |      |
 
 ## Simulations
-The different bulk simulations were chosen to spawn out the force-field space. The Lennard-Jones potential is a two-body potential. The TIP4P is a partly bonded force-field. Stillinger-Weber and Vashishta are non-bonded three-body potentials. 
+The different bulk simulations were chosen to spawn out the force-field space. The Lennard-Jones potential is a two-body potential. The TIP4P is a partly bonded force-field. Stillinger-Weber and Vashishta are non-bonded three-body potentials.
 
 In the Lennard-Jones simulation, we have 2916 argon atoms. In the Stillinger-Weber simulations, there are 64000 silicon atoms. In the TIP4P, there are 6000 water molecules (24000 particles).
 
