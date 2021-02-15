@@ -3,6 +3,20 @@ We run molecular dynamics simulations of bulks using LAMMPS to benchmark the sim
 
 Below, we present the number of timesteps per seconds for the various simulations and for various devices. All simulations were run in the micro-canonical ensemble (NVE), but the number of particles in the simulations vary.
 
+|       CPU       | Intel Core i7-4500U | Intel Xeon E5-2620 | Intel Xeon E5-2683 | Intel Xeon E5-2670 | Intel Xeon W-2295 | AMD EPYC 7252 |
+|    Computer     | Maxwell             | Bigfacet           | Fram               | Egil               | Rahman            | Hugefacet     |
+|      Cores      | 4                   | 16                 | 16                 | 16                 | 18                | 8             |
+|     Freq.       | 1.80 GHz            | 2.10 GHz           | 2.10 GHz           | 2.60 GHz           | 3.00 GHz          | 3.10 GHz      |
+|-----------------|---------------------|--------------------|--------------------|--------------------|-------------------|---------------|
+|     LJ          | 357.790             |                    |                    |                    | 3134.155          | 2082.737      |
+|     SW          | 14.694              |                    |                    |                    | 225.875           | 119.200       |
+|    TIP4P        | 2.701               |                    |                    |                    | 34.796            | 20.081        |
+|    SiC          |                     |                    |                    |                    |                   |               |
+|    SiO2         | 0.055               |                    |                    |                    |                   |               |
+|    SiO2 (table) | 0.075               |                    |                    |                    |                   |               |
+
+ 
+
 | CPU                   | Computer  | Cores | Freq.   | LJ       | SW       | TIP4P  | SiC | SiO2 |
 |-----------------------|-----------|-------|---------|----------|----------|--------|-----|------|
 | Intel Core i7-4500U   | Maxwell   | 4     | 1.80GHz | 357.790  |  14.694  |  2.701 |     |      |
