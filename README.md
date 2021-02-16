@@ -16,13 +16,29 @@ Below, we present the number of timesteps per seconds for the various simulation
 | GPU                   | Computer  | Cores | Freq.   | LJ       | SW       | TIP4P  | SiC | SiO2  |
 |-----------------------|-----------|-------|---------|----------|----------|--------|-----|-------|
 | Nvidia RTX 2070 Super | Rahman    | 2560  | 1.60GHz |          |          |        |     |       |
-| Nvidia P100 Pascal    | Bigfacet  | 3584  | 1.20GHz | 1604.503 |  925.301 |   -    |     |       |
-| Nvidia A100 Ampere    | Hugefacet | 8192  | 1.40GHz | 2180.423 | 2070.548 |   -    |     |       |
+| Nvidia P100 Pascal    | Bigfacet  | 3584  | 1.20GHz | 1604.503 |  925.301 |   -    |     | 3.013 |
+| Nvidia A100 Ampere    | Hugefacet | 8192  | 1.40GHz | 2180.423 | 2070.548 |   -    |     | 14.647|
 
 ## Simulations
+
 The different bulk simulations were chosen to spawn out the force-field space. The Lennard-Jones potential is a two-body potential. The TIP4P is a partly bonded force-field. Stillinger-Weber and Vashishta are non-bonded three-body potentials.
 
-In the Lennard-Jones simulation, we have 2916 argon atoms. In the Stillinger-Weber simulations, there are 64000 silicon atoms. In the TIP4P, there are 6000 water molecules (24000 particles).
+#### Lennard-Jones (Ar)
+We simulate Lennard-Jonesium (e.g. Argon) using the Lennard-Jones potential, as first suggested by [A. Rahman][1]. 
+In the Lennard-Jones simulation, we have 2916 argon atoms.
+
+#### Stillinger-Weber (Si)
+In the Stillinger-Weber simulations, there are 64000 silicon atoms.
+
+#### TIP4P/2005 (H2O)
+In the TIP4P, there are 6000 water molecules (24000 particles).
+
+#### Vashishta (SiC)
+
+#### Vashishta (SiO2)
 
 ## Devices
 The devices were not, by any rule, picked cleverly and they do not spawn out the device space in any possible way. In fact, the devices presented here are just the ones that were available for me when doing the comparison.
+
+## References
+[1]: [A. Rahman, Phys. Rev. 136, A 405 (1964)](https://journals.aps.org/pr/abstract/10.1103/PhysRev.136.A405)
