@@ -24,7 +24,7 @@ Below, we present the number of timesteps per seconds for the various simulation
 The different bulk simulations were chosen to spawn out the force-field space. The Lennard-Jones potential is a two-body potential. The TIP4P is a partly bonded force-field. Stillinger-Weber and Vashishta are non-bonded three-body potentials.
 
 #### Lennard-Jones (Ar)
-We simulate Lennard-Jonesium (e.g. Argon) using the Lennard-Jones potential, as first suggested by [A. Rahman][1]. 
+We simulate Lennard-Jonesium (e.g. Argon) using the Lennard-Jones potential, as first suggested by [A. Rahman][1] . 
 In the Lennard-Jones simulation, we have 2916 argon atoms.
 
 #### Stillinger-Weber (Si)
