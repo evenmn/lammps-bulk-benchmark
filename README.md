@@ -40,7 +40,7 @@ Finally, we simulate quartz using the Vashishta potential and the initial parame
 The devices were not, by any rule, picked cleverly and they do not spawn out the device space in any possible way. In fact, the devices presented here are just the ones that were available for me when doing the comparison.
 
 ## References
-[1]: [A. Rahman, Phys. Rev. A, 136, 405 (1964)](https://journals.aps.org/pr/abstract/10.1103/PhysRev.136.A405)
-[2]: [F. H. Stillinger and T. A. Weber, Phys. Rev. B, 31, 5262 (1985)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.31.5262)
-[3]: [J. L. F. Abascala) and C. Vega, J. Chem. Phys., 123, 234505 (2005)](https://aip.scitation.org/doi/10.1063/1.2121687)
-[4]: [P. Vashishta, R. K. Kalia and J. P. Rino, Phys. Rev. B, 41, 12197 (1990)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.41.12197)
+[1]: [A. Rahman, Phys. Rev. A, 136, 405 (1964)](https://journals.aps.org/pr/abstract/10.1103/PhysRev.136.A405)  
+[2]: [F. H. Stillinger and T. A. Weber, Phys. Rev. B, 31, 5262 (1985)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.31.5262)  
+[3]: [J. L. F. Abascala) and C. Vega, J. Chem. Phys., 123, 234505 (2005)](https://aip.scitation.org/doi/10.1063/1.2121687)  
+[4]: [P. Vashishta, R. K. Kalia and J. P. Rino, Phys. Rev. B, 41, 12197 (1990)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.41.12197)  
