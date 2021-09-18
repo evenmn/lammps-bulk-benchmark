@@ -12,10 +12,12 @@ Below, we present the number of timesteps per seconds for the various simulation
 | Intel Xeon E5-2670    | Egil      | 16    | 2.60GHz |          |          |        |     |       |
 | Intel Xeon W-2295     | Rahman    | 18    | 3.00GHz | 3134.155 | 225.875  | 34.796 |     | 0.666 |
 | AMD EPYC 7252         | Hugefacet | 8     | 3.10GHz | 2082.737 | 119.200  | 20.081 |     |       |
+| Apple Silicon M1      | laptop    | 8     | 
 
 | GPU                   | Computer  | Cores | Freq.   | LJ       | SW       | TIP4P  | SiC | SiO2  |
 |-----------------------|-----------|-------|---------|----------|----------|--------|-----|-------|
-| Nvidia RTX 2070 Super | Rahman    | 2560  | 1.60GHz | 3103.141 |   93.980 |   -    |     | GPUmem|
+| Nvidia RTX 2070 Super | Rahman    | 2560  | 1.60GHz | 3103.141 |  207.475 |   -    |     | GPUmem|
+| Nvidia RTX 3090       | Analyze   | 10496 | 1.40GHz | 4360.802 |  363.375 |   -    |     | 2.165 |
 | Nvidia P100 Pascal    | Bigfacet  | 3584  | 1.20GHz | 1604.503 |  925.301 |   -    |     | 3.013 |
 | Nvidia A100 Ampere    | Hugefacet | 8192  | 1.40GHz | 2180.423 | 2070.548 |   -    |     | 14.647|
 
@@ -25,8 +27,16 @@ The different bulk simulations were chosen to spawn out the force-field space. T
 #### Lennard-Jones (Ar)
 We simulate Lennard-Jonesium (e.g. Argon) using the Lennard-Jones potential, as first suggested by [A. Rahman][1]. Our initial system is a face-centered cube with 2,916 particles, and is simulated at 1197K (10000 steps). See [src/lennardjones/in.lammps](src/lennardjones/in.lammps) for LAMMPS input script.
 
+```bash
+mpirun -n 1 lmp -pk kokkos newton on neigh full -k on g 1 -sf kk -in in.lammps
+```
+
 #### Stillinger-Weber (Si)
 Silicon is simulated using the Stillinger-Weber potential and the original parameterization by [Stillinger and Weber][2]. The system consists of 64,000 particles initialized in crystal structure and is simulated at 1000K (10000 steps). See [src/stillingerweber/in.lammps](src/stillingerweber/in.lammps) for LAMMPS input script.
+
+```bash
+mpirun -n 1 lmp -pk kokkos newton on neigh half -k on g 1 -sf kk -in in.lammps
+```
 
 #### TIP4P/2005 (H2O)
 Water is simulated using the popular TIP4P potential and the universal parameterization by [Abascal and Vega][3], known as TIP4P/2005. 6,000 water molecules (24,000 particles) are initialized on a grid, and simulated at 300K (1000 steps). See [src/tip4p/in.lammps](src/tip4p/in.lammps) for LAMMPS input script.
@@ -35,6 +45,10 @@ Water is simulated using the popular TIP4P potential and the universal parameter
 
 #### Vashishta (SiO2)
 Finally, we simulate quartz using the Vashishta potential and the initial parameterization by [Vashishta et al.][4]. The system is initialized with 3,000,000 SiO2 molecules (9,000,000 particles), and simulated at 2000K (100 steps). See [src/sio2/in.lammps](src/sio2/in.lammps) for LAMMPS input script.
+
+```bash
+mpirun -n 1 lmp -pk kokkos newton on neigh half -k on g 1 -sf kk -in in.lammps
+```
 
 ## Devices
 The devices were not, by any rule, picked cleverly and they do not spawn out the device space in any possible way. In fact, the devices presented here are just the ones that were available for me when doing the comparison.
