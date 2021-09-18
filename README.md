@@ -15,7 +15,7 @@ Below, we present the number of timesteps per seconds for the various simulation
 
 | GPU                   | Computer  | Cores | Freq.   | LJ       | SW       | TIP4P  | SiC | SiO2  |
 |-----------------------|-----------|-------|---------|----------|----------|--------|-----|-------|
-| Nvidia RTX 2070 Super | Rahman    | 2560  | 1.60GHz |          |          |        |     |       |
+| Nvidia RTX 2070 Super | Rahman    | 2560  | 1.60GHz | 3103.141 |   93.980 |   -    |     | GPUmem|
 | Nvidia P100 Pascal    | Bigfacet  | 3584  | 1.20GHz | 1604.503 |  925.301 |   -    |     | 3.013 |
 | Nvidia A100 Ampere    | Hugefacet | 8192  | 1.40GHz | 2180.423 | 2070.548 |   -    |     | 14.647|
 
