@@ -18,8 +18,8 @@ Below, we present the number of timesteps per seconds for the various simulation
 |-----------------------|-----------|-------|---------|----------|----------|--------|-----|-------|
 | Nvidia RTX 2070 Super | Rahman    | 2560  | 1.60GHz | 3103.141 |  207.475 |   -    |     | GPUmem|
 | Nvidia RTX 3090       | Analyze   | 10496 | 1.40GHz | 4360.802 |  363.375 |   -    |     | 2.165 |
-| Nvidia P100 Pascal    | Bigfacet  | 3584  | 1.20GHz | 1604.503 |  925.301 |   -    |     | 3.013 |
-| Nvidia A100 Ampere    | Hugefacet | 8192  | 1.40GHz | 2180.423 | 2070.548 |   -    |     | 14.647|
+| Nvidia P100-16GB      | Bigfacet  | 3584  | 1.20GHz | 1604.503 |  925.301 |   -    |     | 3.013 |
+| Nvidia A100-40GB      | Hugefacet | 8192  | 1.40GHz | 2180.423 | 2070.548 |   -    |     | 14.647|
 
 ## Simulations
 The different bulk simulations were chosen to spawn out the force-field space. The Lennard-Jones potential is a two-body potential. The TIP4P is a partly bonded force-field. Stillinger-Weber and Vashishta are non-bonded three-body potentials. We investigate different system sizes to challenge the different devices.
