@@ -9,14 +9,14 @@ Below, we present the number of timesteps per seconds for the various simulation
 | Intel Core i7-4500U   | Maxwell   | 4     | 1.80GHz | 357.790  |  14.694  |  2.701 |     | 0.055 |
 | Intel Xeon E5-2620    | Bigfacet  | 16    | 2.10GHz |          |          |        |     |       |
 | Intel Xeon E5-2683    | Fram      | 16    | 2.10GHz |          |          |        |     |       |
-| Intel Xeon E5-2670    | Egil      | 16    | 2.60GHz |          |          |        |     |       |
+| Intel Xeon E5-2670    | Egil      | 16    | 2.60GHz |          |          |        |     | 0.365 |
 | Intel Xeon W-2295     | Rahman    | 18    | 3.00GHz | 3134.155 | 225.875  | 34.796 |     | 0.666 |
 | AMD EPYC 7252         | Hugefacet | 8     | 3.10GHz | 2082.737 | 119.200  | 20.081 |     |       |
-| Apple Silicon M1      | laptop    | 8     | 
+| Apple Silicon M1      | laptop    | 8     |         |          |          |        |     |       |
 
 | GPU                   | Computer  | Cores | Freq.   | LJ       | SW       | TIP4P  | SiC | SiO2  |
 |-----------------------|-----------|-------|---------|----------|----------|--------|-----|-------|
-| Nvidia RTX 2070 Super | Rahman    | 2560  | 1.60GHz | 3103.141 |  207.475 |   -    |     | GPUmem|
+| Nvidia RTX 2070 Super | Rahman    | 2560  | 1.60GHz | 3103.141 |  207.475 |   -    |     | memerr|
 | Nvidia RTX 3090       | Analyze   | 10496 | 1.40GHz | 4360.802 |  363.375 |   -    |     | 2.165 |
 | Nvidia P100-PCIE-16GB | Bigfacet  | 3584  | 1.20GHz | 1604.503 |  925.301 |   -    |     | 3.013 |
 | Nvidia A100-PCIE-40GB | Hugefacet | 8192  | 1.40GHz | 2180.423 | 2070.548 |   -    |     | 14.647|
