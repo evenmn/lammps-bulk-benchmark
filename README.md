@@ -12,7 +12,7 @@ Below, we present the number of timesteps per seconds for the various simulation
 | Intel Xeon E5-2670    | Egil      | 16    | 2.60GHz |          |          |        |     | 0.365 |
 | Intel Xeon W-2295     | Rahman    | 18    | 3.00GHz | 3134.155 | 225.875  | 34.796 |     | 0.666 |
 | AMD EPYC 7252         | Hugefacet | 8     | 3.10GHz | 2082.737 | 119.200  | 20.081 |     |       |
-| Apple Silicon M1      | laptop    | 8     |         |          |          |        |     |       |
+| Apple Silicon M1      | laptop    | 8     |         | 1001.461 |  75.730  |        |     | 0.399 |
 
 | GPU                   | Computer  | Cores | Freq.   | LJ       | SW       | TIP4P  | SiC | SiO2  |
 |-----------------------|-----------|-------|---------|----------|----------|--------|-----|-------|
