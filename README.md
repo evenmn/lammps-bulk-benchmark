@@ -1,4 +1,4 @@
-# Molecular dynamics bulk benchmarks
+# LAMMPS bulk benchmarks
 We run molecular dynamics simulations of bulks using LAMMPS to benchmark the simulation times on various CPUs and GPUs. Also, the computational performance of different force-fields might be compared.
 
 Below, we present the number of timesteps per seconds for the various simulations and for various devices. All simulations were run in the micro-canonical ensemble (NVE), but the number of particles in the simulations vary.
