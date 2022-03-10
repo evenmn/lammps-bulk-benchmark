@@ -1,21 +1,23 @@
 units metal
 boundary p p p
+
 atom_style atomic
 
-read_data ${datafile}
+read_data data.3c.sic
+
+replicate 100 100 100
+velocity all create 2000.0 277387 mom yes
 
 pair_style vashishta
 pair_coeff * * SiC.vashishta C Si
 
-mass 1 12.011
-mass 2 28.079
+neighbor 0.3 bin
+neigh_modify delay 10
 
+fix 1 all nve
+thermo 10
+thermo_style custom step time atoms spcpu cpuremain
 timestep 0.002
 
-velocity mobile create ${temp} ${seed} rot yes
-
-thermo 100
-thermo_style custom step time atoms spcpu cpuremain
-
-run ${run_steps}
+run 1000
 

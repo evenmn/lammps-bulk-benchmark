@@ -1,0 +1,19 @@
+# 3C-SiC unit cell
+
+    2 atoms
+    2 atom types
+
+0 4.3596 xlo xhi
+0 4.3596 ylo yhi
+0 4.3596 zlo zhi
+0.0 0.0 0.0 xy xz yz
+
+Masses
+
+        1 28.0855
+        2 12.0107
+
+Atoms
+
+        1   1   1.08990 1.08990 1.08990
+        2   2   0.00000 0.00000 0.00000
