@@ -18,7 +18,7 @@ Below, we present the number of timesteps per seconds for the various simulation
 |-----------------------|-----------|--------|---------|----------|----------|--------|--------|-------|
 | Nvidia RTX 2070 Super | Rahman    | 2,560  | 1.60GHz | 3103.141 |  207.475 |   -    | 4.169  | memerr|
 | Nvidia RTX 2080 Super | bioai     | 3,072  | 1.65GHz |          |          |   -    | 4.598  |       |
-| Nvidia RTX 3090       | Analyze   | 1,0496 | 1.40GHz | 4360.802 |  363.375 |   -    | 8.576  | 2.165 |
+| Nvidia RTX 3090       | Analyze   | 10,496 | 1.40GHz | 4360.802 |  363.375 |   -    | 8.576  | 2.165 |
 | Nvidia P100-PCIE-16GB | Bigfacet  | 3,584  | 1.20GHz | 1604.503 |  925.301 |   -    |        | 3.013 |
 | Nvidia A100-PCIE-40GB | Hugefacet | 8,192  | 1.40GHz | 2180.423 | 2070.548 |   -    | 53.733 | 14.647|
 
