@@ -6,21 +6,21 @@ Below, we present the number of timesteps per seconds for the various simulation
 
 | CPU                   | Computer  | Cores  | Freq.   | LJ       | SW       | TIP4P  | SiC    | SiO2  |
 |-----------------------|-----------|--------|---------|----------|----------|--------|--------|-------|
-| Intel Core i7-4500U   | Maxwell   | 4      | 1.80GHz | 357.790  |  14.694  |  2.701 |        | 0.055 |
-| Intel Xeon E5-2620    | Bigfacet  | 16     | 2.10GHz |          |          |        |        |       |
-| Intel Xeon E5-2683    | Fram      | 16     | 2.10GHz |          |          |        |        |       |
-| Intel Xeon E5-2670    | Egil      | 16     | 2.60GHz |          |          |        | 1.792  | 0.365 |
-| Intel Xeon W-2295     | Rahman    | 18     | 3.00GHz | 3134.155 | 225.875  | 34.796 | 3.171  | 0.666 |
-| AMD EPYC 7252         | Hugefacet | 8      | 3.10GHz | 2082.737 | 119.200  | 20.081 |        |       |
+| Intel Core i7-4500U   | maxwell   | 4      | 1.80GHz | 357.790  |  14.694  |  2.701 |        | 0.055 |
+| Intel Xeon E5-2620    | bigfacet  | 16     | 2.10GHz |          |          |        |        |       |
+| Intel Xeon E5-2683    | fram      | 16     | 2.10GHz |          |          |        |        |       |
+| Intel Xeon E5-2670    | egil      | 16     | 2.60GHz |          |          |        | 1.792  | 0.365 |
+| Intel Xeon W-2295     | rahman    | 18     | 3.00GHz | 3134.155 | 225.875  | 34.796 | 3.171  | 0.666 |
+| AMD EPYC 7252         | hugefacet | 8      | 3.10GHz | 2082.737 | 119.200  | 20.081 |        |       |
 | Apple Silicon M1      | laptop    | 8      | 3.20GHz | 1001.461 |  75.730  |        |        | 0.399 |
 
 | GPU                   | Computer  | Cores  | Freq.   | LJ       | SW       | TIP4P  | SiC    | SiO2  |
 |-----------------------|-----------|--------|---------|----------|----------|--------|--------|-------|
-| Nvidia RTX 2070 Super | Rahman    | 2,560  | 1.60GHz | 3103.141 |  207.475 |   -    | 4.169  | memerr|
+| Nvidia RTX 2070 Super | rahman    | 2,560  | 1.60GHz | 3103.141 |  207.475 |   -    | 4.169  | memerr|
 | Nvidia RTX 2080 Super | bioai     | 3,072  | 1.65GHz |          |          |   -    | 4.598  |       |
-| Nvidia RTX 3090       | Analyze   | 10,496 | 1.40GHz | 4360.802 |  363.375 |   -    | 8.576  | 2.165 |
-| Nvidia P100-PCIE-16GB | Bigfacet  | 3,584  | 1.20GHz | 1604.503 |  925.301 |   -    |        | 3.013 |
-| Nvidia A100-PCIE-40GB | Hugefacet | 8,192  | 1.40GHz | 2180.423 | 2070.548 |   -    | 53.733 | 14.647|
+| Nvidia RTX 3090       | analyze   | 10,496 | 1.40GHz | 4360.802 |  363.375 |   -    | 8.576  | 2.165 |
+| Nvidia P100-PCIE-16GB | bigfacet  | 3,584  | 1.20GHz | 1604.503 |  925.301 |   -    |        | 3.013 |
+| Nvidia A100-PCIE-40GB | hugefacet | 8,192  | 1.40GHz | 2180.423 | 2070.548 |   -    | 53.733 | 14.647|
 
 ## Simulation details
 All simulations above were run with the same LAMMPS version (February 17th, 2022) to make them reasonably comparable. LAMMPS was built with the packages granular, KOKKOS, KSPACE, manybody, molecular, python and rigid. For the CPU simulations, the command 
