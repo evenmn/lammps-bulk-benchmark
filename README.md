@@ -38,13 +38,13 @@ Each system was simulated 10 times, and the presented number is an average of th
 ## The different systems
 The different bulk systems were chosen to spawn out the force-field space. The Lennard-Jones potential is a two-body potential. The TIP4P is a partly bonded force-field. Stillinger-Weber and Vashishta are non-bonded three-body potentials. We investigate different system sizes to challenge the different devices.
 
-### Lennard-Jones (Ar)
+### Lennard-Jones (LJ)
 We simulate Lennard-Jonesium (e.g. Argon) using the Lennard-Jones potential, as first suggested by [A. Rahman][1]. Our initial system is a face-centered cube with 2,916 particles, and is simulated at 1197K (10000 steps). See [src/lennardjones/in.lammps](src/lennardjones/in.lammps) for LAMMPS input script.
 
-### Stillinger-Weber (Si)
+### Stillinger-Weber (SW)
 Silicon is simulated using the Stillinger-Weber potential and the original parameterization by [Stillinger and Weber][2]. The system consists of 64,000 particles initialized in crystal structure and is simulated at 1000K (10000 steps). See [src/stillingerweber/in.lammps](src/stillingerweber/in.lammps) for LAMMPS input script.
 
-### TIP4P/2005 (H2O)
+### TIP4P/2005 (TIP4P)
 Water is simulated using the popular TIP4P potential and the universal parameterization by [Abascal and Vega][3], known as TIP4P/2005. 6,000 water molecules (24,000 particles) are initialized on a grid, and simulated at 300K (1000 steps). See [src/tip4p/in.lammps](src/tip4p/in.lammps) for LAMMPS input script.
 
 ### Vashishta (SiC)
