@@ -7,7 +7,6 @@ For each of the systems, a table like the one below is presented to display the 
 |-----------------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|-------|
 | Intel Core i7-4500U   |
 | Intel Xeon E5-2620    |
-| Intel Xeon E5-2683    |
 | Intel Xeon E5-2670    |
 | Intel Xeon W-2295     |
 | AMD EPYC 7272         |
