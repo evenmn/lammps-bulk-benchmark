@@ -7,8 +7,8 @@ Below, we present the number of timesteps per seconds for the various simulation
 | CPU                   | Computer  | Cores  | Freq.   | LJ       | SW       | TIP4P  | SiC    | SiO2  |
 |-----------------------|-----------|--------|---------|----------|----------|--------|--------|-------|
 | Intel Core i7-4500U   | maxwell   | 4      | 1.80GHz | 357.790  |  14.694  |  2.701 |        | 0.055 |
-| Intel Xeon E5-2620    | bigfacet  | 16     | 2.10GHz | 1415.721 | 69.960   |        | 1.177  | 0.250 |
-| Intel Xeon E5-2670    | egil      | 16     | 2.60GHz |          |          |        | 1.792  | 0.365 |
+| Intel Xeon E5-2620    | bigfacet  | 16     | 2.10GHz | 1415.721 |  69.960  |        | 1.177  | 0.250 |
+| Intel Xeon E5-2670    | egil      | 16     | 2.60GHz | 1580.308 |  65.556  | 13.210 | 1.792  | 0.269 |
 | AMD EPYC 7252         | hugefacet | 16     | 3.10GHz | 2011.210 | 117.416  | 19.943 | 1.995  | 0.441 |
 | Intel Xeon W-2295     | rahman    | 18     | 3.00GHz | 3134.155 | 225.875  | 34.796 | 3.171  | 0.666 |
 | Apple Silicon M1      | laptop    | 8      | 3.20GHz | 1001.461 |  75.730  |        |        | 0.399 |
@@ -19,7 +19,7 @@ Below, we present the number of timesteps per seconds for the various simulation
 | Nvidia RTX 2080 Super | bioai     | 3,072  | 1.65GHz |          |          |   -    | 4.598  | memerr|
 | Nvidia RTX 3090       | analyze   | 10,496 | 1.40GHz | 4360.802 |  363.375 |   -    | 8.576  | 2.165 |
 | Nvidia P100-PCIE-16GB | bigfacet  | 3,584  | 1.20GHz | 4257.105 |  432.307 |   -    | 11.359 | 2.487 |
-| Nvidia A100-PCIE-40GB | hugefacet | 8,192  | 1.40GHz | 4820.603 | 962.502 |   -    | 53.733 | 11.637 |
+| Nvidia A100-PCIE-40GB | hugefacet | 8,192  | 1.40GHz | 4820.603 |  962.502 |   -    | 53.733 | 11.637 |
 
 ## Simulation details
 All simulations above were run with the same LAMMPS version (February 17th, 2022) to make them reasonably comparable. LAMMPS was built with the packages granular, KOKKOS, KSPACE, manybody, molecular, python and rigid. For the CPU simulations, the command 
