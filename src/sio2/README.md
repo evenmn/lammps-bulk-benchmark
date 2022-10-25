@@ -10,6 +10,7 @@ For each of the systems, a table like the one below is presented to display the 
 | Intel Xeon E5-2670    | 0.271 | 0.268 | 0.271 | 0.271 | 0.283 | 0.284 | 0.261 | 0.261 | 0.261 | 0.257 | 0.269 |
 | Intel Xeon W-2295     |
 | AMD EPYC 7272         | 0.441 | 0.441 | 0.442 | 0.441 | 0.441 | 0.440 | 0.440 | 0.441 | 0.441 | 0.441 | 0.441 | 
+| AMD EPYC 7763         | 5.234 | 5.222 | 5.219 | 5.226 | 5.124 | 4.991 | 5.189 | 5.250 | 5.239 | 5.242 | 5.194 |
 | Apple M1              |
 | Nvidia RTX 2070 super |
 | Nvidia RTX 2080 super | 
