@@ -10,7 +10,7 @@ Below, we present the number of timesteps per seconds for the various simulation
 | Intel Xeon E5-2620    | bigfacet  | 16     | 2.10GHz | 1415.721 |  69.960  |        | 1.177  | 0.250 |
 | Intel Xeon E5-2670    | egil      | 16     | 2.60GHz | 1580.308 |  65.556  | 13.210 | 1.792  | 0.269 |
 | AMD EPYC 7252         | hugefacet | 16     | 3.10GHz | 2011.210 | 117.416  | 19.943 | 1.995  | 0.441 |
-| AMD EPYC 7762         | griffith  | 128    | 2.45GHz | 3837.572 |
+| AMD EPYC 7762         | griffith  | 128    | 2.45GHz | 3837.572 |          |        |        | 5.194 |
 | Intel Xeon W-2295     | rahman    | 18     | 3.00GHz | 3134.155 | 225.875  | 34.796 | 3.171  | 0.666 |
 | Apple Silicon M1      | laptop    | 8      | 3.20GHz | 1001.461 |  75.730  |        |        | 0.399 |
 
